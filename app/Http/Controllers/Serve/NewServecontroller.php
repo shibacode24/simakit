@@ -256,6 +256,7 @@ class NewServecontroller extends Controller
    
        echo json_encode($store);
        exit();
+       
        $store->survey_app_no=$request->get('survey_app_no');
        
        if ($request->hasFile('photo')) {
